@@ -1,1 +1,1 @@
-npm init
+npm i
