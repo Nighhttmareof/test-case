@@ -28,7 +28,18 @@ const ReactBtn:FC<Props> = ({type, post}) => {
                 return
             } 
         }
-        if (post.rate === 'like' || post.rate === 'dislike') dispatch({type:CANCEL_REACT_POST, payload:post.id});
+        if (post.rate === 'like' || post.rate === 'dislike') {
+            const activeRate = post.rate
+            dispatch({type:CANCEL_REACT_POST, payload:post.id})
+            switch (activeRate) {
+                case 'like':
+                    dispatch({type:DISLIKE_POST, payload:post.id})
+                    break;
+                case 'dislike':
+                    dispatch({type:LIKE_POST, payload:post.id})
+                    break;
+            }
+        } 
     }
 
     return (
