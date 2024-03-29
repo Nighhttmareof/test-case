@@ -38,6 +38,8 @@
 }
 
 .post-page-body_container > p {
+    font-size: 18px;
+    line-height: 26px;
     width: 848px;
     margin-top: 48px;
 }
