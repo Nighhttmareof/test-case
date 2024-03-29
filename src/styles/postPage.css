@@ -1,0 +1,43 @@
+.post-page-body {
+    margin-top: 64px;
+}
+
+.back-to-blog {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-to-blog > p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.post-page-body_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.post-page-body_container > h2 {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 40px;
+}
+
+.post-page-body_container > img {
+    width: 848px;
+    height: 477px;
+    margin-top: 48px;
+}
+
+.post-page-body_container > p {
+    width: 848px;
+    margin-top: 48px;
+}
